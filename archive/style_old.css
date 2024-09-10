@@ -13,17 +13,17 @@
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Verdana:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Heiti SC', sans-serif;
+  font-family: Roboto;
   border: none;
 }
 
 p {
-  font-family: 'Heiti SC', sans-serif;
+  font-family: Roboto;
 }
 
 html {
@@ -58,29 +58,16 @@ ul {
 }
 
 .logo {
+  width: 40vw;
   font-family: quicksand, sans-serif;
   font-size: 26px;
   font-weight: lighter;
   border: none;
   padding-left: 1rem;
-  text-align: center; /* Center the logo */
 }
 
 .logo img {
-  max-width: 100%; /* Ensures the image scales down if necessary */
-  height: auto; /* Keeps the aspect ratio */
-}
-
-@media (min-width: 600px) {
-  .logo img {
-    max-width: 500px; /* Adjust this value to control the maximum size */
-  }
-}
-
-@media (min-width: 900px) {
-  .logo img {
-    max-width: 500px; /* Adjust this value for larger screens */
-  }
+  width: 100%;
 }
 
 ul > li {
@@ -151,7 +138,7 @@ img + button:hover,
   padding: 2.5rem 1rem;
   font-size: 2.8rem;
   font-weight: 300;
-  font-family: 'Heiti SC', sans-serif;
+  font-family: Roboto;
 }
 
 #disciplines > h3 {
@@ -169,32 +156,27 @@ img + button:hover,
   flex-wrap: wrap;
 }
 
+h2,
+h3 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+  font-family: Roboto;
+}
+
 .card {
-  flex: 1 1 calc(33.333% - 2rem); /* Adjust to fit three cards per row with space in between */
-  max-width: 350px; /* Adjust the maximum width of each card */
+  color: var(--dark-blue);
+  width: 300px;
   padding: 2rem;
   background-color: var(--beige-background);
   background-color: var(--light-beige-background);
-  box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
 }
-
-.card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--dark-blue); /* Apply the red shade */
-}
-
-.card p {
-  font-size: 1rem;
-  color: var(--dark-blue); /* Apply the same red shade */
-}
-
 
 /* portrait */
 
 #portrait {
   background-color: var(--light-beige-background);
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: flex-start;
   padding: 5rem;
@@ -202,29 +184,29 @@ img + button:hover,
 }
 
 .portrait-image {
-  width: 100%; /* Allows the container to take up the full width */
-  max-width: 500px; /* Sets a maximum width to prevent it from getting too large */
-  overflow: hidden; /* Ensures no extra space */
+  border: var(--dark-blue) 4px solid;
+  width: minmax(30%, 500px, 90%);
 }
-
 .portrait-image img {
-  width: 100%; /* Makes sure the image fills the container */
-  height: auto; /* Keeps the aspect ratio */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  object-fit: fill;
 }
 
 .portrait-text {
   background-color: var(--dark-blue);
+  color: var(--light-beige-background);
   color: whitesmoke;
+  /* border-radius: 20px; */
   padding: 4rem 2rem 2rem;
-  width: min(600px, 40%); /* Corrected duplicate width settings */
-  height: min(600px, 100%);
-
+  width: min(700px, 40%);
+  width: min(600px, 40%);
 }
-
 .portrait-text button {
   margin-top: 2rem;
   width: 100%;
+  /* height: 2.5rem;
+  border-radius: 4rem;
+  border: 0.5px solid red; */
 }
 
 .portrait-text button:hover,
@@ -232,14 +214,6 @@ img + button:hover,
   background-color: rgb(216, 194, 194);
   cursor: pointer;
 }
-
-
-.portrait-text button:hover,
-.button:hover {
-  background-color: rgb(216, 194, 194);
-  cursor: pointer;
-}
-
 
 #contact {
   background-color: var(--light-beige-background);
