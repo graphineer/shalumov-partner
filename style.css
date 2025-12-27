@@ -13,17 +13,27 @@
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Verdana:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Heiti SC', sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
+  letter-spacing: 0;
   border: none;
 }
 
 p {
-  font-family: 'Heiti SC', sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: "Noto Sans", Arial, sans-serif;
+  letter-spacing: 0;
 }
 
 html {
@@ -39,6 +49,43 @@ header {
   height: 13vh;
   background-color: var(--beige-background);
   width: 100%;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.5rem;
+  margin-left: auto;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(40, 56, 81, 0.18);
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+.lang-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.lang-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: rgba(40, 56, 81, 0.08);
+}
+
+.lang-btn.active {
+  background-color: rgba(162, 46, 71, 0.1);
+  box-shadow: 0 0 0 2px rgba(162, 46, 71, 0.28);
 }
 
 ul {

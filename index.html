@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,20 @@
       <!-- <div class="logo select-animate">Shalumov & Partner</div>      -->
       <div class="logo select-animate">
         <img src="./assets/logo.png" alt="" srcset="" />
+      </div>
+      <div class="language-switcher select-animate" aria-label="Language selector">
+        <button class="lang-btn" data-lang="de" aria-label="Deutsch">
+          🇩🇪
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="English">
+          🇬🇧
+        </button>
+        <button class="lang-btn" data-lang="ru" aria-label="Русский">
+          🇷🇺
+        </button>
+        <button class="lang-btn" data-lang="mk" aria-label="Македонски">
+          🇲🇰
+        </button>
       </div>
       <!-- <nav>
         <ul class="nav-links select-animate">
@@ -34,6 +48,7 @@
           type="button"
           class="select-animate"
           onclick="window.location.href='#portrait'"
+          data-i18n="cta.portfolio"
         >
           Portfolio
         </button>
@@ -41,13 +56,17 @@
     </section>
 
     <section id="disciplines">
-      <h1 class="select-animate">Mit Kompetenz. Mit Mut. Mit Biss.</h1>
-      <h3><em> Unsere Expertise: </em></h3>
+      <h1 class="select-animate" data-i18n="disciplines.title">
+        Mit Kompetenz. Mit Mut. Mit Biss.
+      </h1>
+      <h3>
+        <em data-i18n="disciplines.subtitle">Unsere Expertise:</em>
+      </h3>
 
       <div class="cards">
         <div class="card">
-          <h3 class="animate">Gesellschaftsrecht</h3>
-          <p>
+          <h3 class="animate" data-i18n="card1.title">Gesellschaftsrecht</h3>
+          <p data-i18n="card1.body">
             Das Gesellschaftsrecht bildet den Kernbereich unserer juristischen
             Beratung. Mit unserem breiten Netzwerk an Rechtsanwälten finden wir
             Lösungen für alle Bereiche des Wirtschaftsrechts und beraten
@@ -57,8 +76,8 @@
         </div>
 
         <div class="card">
-          <h3>Vertragsrecht</h3>
-          <p>
+          <h3 data-i18n="card2.title">Vertragsrecht</h3>
+          <p data-i18n="card2.body">
             Wir prüfen Ihren Gesellschaftsvertrag, Ihren Arbeitsvertrag oder
             Ihren Mietvertrag auf Herz und Nieren und finden kluge Lösungen für
             eine gerechte Interessenverteilung bei Ihrem Rechtsproblem.
@@ -66,8 +85,8 @@
         </div>
 
         <div class="card">
-          <h3>Wirtschaftsstrafrecht und Individualverteidigung</h3>
-          <p>
+          <h3 data-i18n="card3.title">Wirtschaftsstrafrecht und Individualverteidigung</h3>
+          <p data-i18n="card3.body">
             Wir beraten und vertreten Einzelpersonen sowie Unternehmen in jeder
             Verfahrenslage. Unsere besondere Kompetenz im Bereich des
             Strafrechts ermöglicht uns starke und kalkulierte
@@ -84,7 +103,7 @@
 
       <div class="portrait-text">
         <h2>RA Daniil Shalumov</h2>
-        <p>
+        <p data-i18n="portrait.body">
           Seit August 2024 ist Daniil Shalumov zugelassener Rechtsanwalt in
           München. Zusammen mit einem Netzwerk an Juristinnen und Juristen auf
           der ganzen Welt bietet er seit dem Rechtsdienstleistungen auf
@@ -101,6 +120,7 @@
           type="button"
           class="button"
           onclick="window.location.href = '#contact'"
+          data-i18n="cta.contact"
         >
           Jetzt Kontakt aufnehmen
         </button>
