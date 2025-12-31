@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap");
 
 :root {
-  --page-bg: #f7f4ee;
+  --page-bg: #f3e9d4;
   --panel: #ffffff;
-  --muted: #5a6473;
-  --text: #1f2430;
-  --accent: #a22e47;
-  --accent-soft: #f4e6ea;
-  --border: #e5e1d8;
+  --muted: #4a4552;
+  --text: #1b171b;
+  --accent: #6c1226;
+  --accent-soft: #efd08b;
+  --border: #d9c18a;
   --shadow-soft: 0 14px 40px rgba(0, 0, 0, 0.08);
   --radius: 18px;
   --radius-sm: 12px;
@@ -158,7 +158,7 @@ ul > li {
 
 #title {
   position: relative;
-  background: linear-gradient(120deg, rgba(247, 244, 238, 0.75), rgba(247, 244, 238, 0.35)),
+  background: linear-gradient(120deg, rgba(245, 240, 228, 0.25), rgba(245, 240, 228, 0.12)),
     url("./assets/library.jpg") center/cover no-repeat;
   overflow: hidden;
 }
@@ -167,7 +167,7 @@ ul > li {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(140deg, rgba(247, 244, 238, 0.7), rgba(162, 46, 71, 0.1));
+  background: linear-gradient(140deg, rgba(108, 18, 38, 0.26), rgba(201, 165, 72, 0.22));
   pointer-events: none;
 }
 
@@ -190,7 +190,7 @@ ul > li {
   align-items: flex-start;
   justify-content: center;
   border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   gap: 1.25rem;
@@ -218,10 +218,30 @@ img + button,
 img + button:hover,
 .button:hover {
   color: #ffffff;
-  background-color: #8f2740;
-  border-color: #8f2740;
+  background-color: #5a0f20;
+  border-color: #5a0f20;
   transform: translateY(-1px);
-  box-shadow: 0 10px 25px rgba(162, 46, 71, 0.25);
+  box-shadow: 0 10px 25px rgba(108, 18, 38, 0.28);
+}
+
+.button.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  box-shadow: none;
+}
+
+.button.ghost:hover {
+  background: rgba(108, 18, 38, 0.08);
+  color: #5a0f20;
+  border-color: #5a0f20;
+  box-shadow: 0 8px 20px rgba(108, 18, 38, 0.16);
+}
+
+.button-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 /* disciplines */

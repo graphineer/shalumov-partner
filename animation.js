@@ -20,6 +20,7 @@ if (heroImage) {
 const translations = {
   de: {
     "cta.portfolio": "Portfolio",
+    "cta.profile": "Mehr erfahren",
     "disciplines.title": "Mit Kompetenz. Mit Mut. Mit Biss.",
     "disciplines.subtitle": "Unsere Expertise:",
     "card1.title": "Gesellschaftsrecht",
@@ -40,6 +41,7 @@ const translations = {
   },
   en: {
     "cta.portfolio": "Portfolio",
+    "cta.profile": "Learn more",
     "disciplines.title": "With competence. With courage. With tenacity.",
     "disciplines.subtitle": "Our expertise:",
     "card1.title": "Corporate law",
@@ -60,6 +62,7 @@ const translations = {
   },
   ru: {
     "cta.portfolio": "Портфолио",
+    "cta.profile": "Подробнее",
     "disciplines.title": "С компетенцией. С мужеством. С напором.",
     "disciplines.subtitle": "Наша экспертиза:",
     "card1.title": "Корпоративное право",
@@ -80,6 +83,7 @@ const translations = {
   },
   mk: {
     "cta.portfolio": "Портфолио",
+    "cta.profile": "Дознај повеќе",
     "disciplines.title": "Со компетентност. Со храброст. Со упорност.",
     "disciplines.subtitle": "Нашата експертиза:",
     "card1.title": "Деловно право",
@@ -100,6 +104,7 @@ const translations = {
   },
   bg: {
     "cta.portfolio": "Портфолио",
+    "cta.profile": "Научете повече",
     "disciplines.title": "С компетентност. С кураж. С решителност.",
     "disciplines.subtitle": "Нашата експертиза:",
     "card1.title": "Корпоративно право",
