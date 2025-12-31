@@ -1,39 +1,57 @@
-@media screen and (max-width: 800px) {
+@media (max-width: 1000px) {
+  .title-grid {
+    grid-template-columns: 1fr;
+  }
+
   #title-right {
-    grid-column: auto / span 2;
+    align-items: center;
   }
-  #portrait {
-    flex-wrap: wrap;
+}
+
+@media (max-width: 840px) {
+  .portrait-layout {
+    flex-direction: column;
+    align-items: stretch;
   }
-  #portrait {
-    padding: 1rem 2rem;
-    gap: 1rem;
-  }
+
   .portrait-text {
-    width: 75%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .portrait-image {
+    max-width: 100%;
   }
 
-  @media (max-width: 500px) {
-    .portrait-image {
-      max-width: 300px; /* Adjusts the max-width for smaller screens */
-    }
+  .language-switcher {
+    margin-left: auto;
   }
-  
-  @media (min-width: 500px) and (max-width: 900px) {
-    .portrait-image {
-      max-width: 400px; /* Adjusts the max-width for medium screens */
-    }
-  }
-  
-  @media (min-width: 900px) {
-    .portrait-image {
-      max-width: 500px; /* Adjusts the max-width for larger screens */
-    }
-  }
-  
 
-  .animate-slidein {
-    animation: 4s slide-in 1 normal;
+  .lang-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: 360px;
   }
 }
 
@@ -43,26 +61,5 @@
   }
   to {
     transform: translateY(0%);
-  }
-}
-
-@media (max-width: 600px) {
-  .card {
-    flex: 1 1 100%; /* Full width on smaller screens */
-    max-width: 100%; /* Ensure card can expand to full width */
-  }
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-  .card {
-    flex: 1 1 calc(50% - 2rem); /* Two cards per row on medium screens */
-    max-width: 100%; /* Ensure card can expand to fit the container */
-  }
-}
-
-@media (min-width: 900px) {
-  .card {
-    flex: 1 1 calc(33.333% - 2rem); /* Three cards per row on larger screens */
-    max-width: 350px; /* Adjust as needed to match image size */
   }
 }
